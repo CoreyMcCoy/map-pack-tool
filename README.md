@@ -1,33 +1,40 @@
-# React Starter Template
+# Map Pack Tool
 
-A modern React starter template built with Vite, featuring Tailwind CSS, React Router, and essential components for rapid development.
+A React-based tool designed to help local businesses optimize their presence in the Google Map Pack. This project provides a checklist for tracking progress on various tactics to improve local SEO rankings.
 
 ## Features
 
-- ⚡ Vite for fast development and building
-- 🎨 Tailwind CSS for utility-first styling
-- 🧭 React Router for client-side routing
-- 🎯 ESLint for code quality and consistency
-- 📱 Pre-built responsive components (Header, Footer, ScrollToTop)
-- 🎨 Lucide React for beautiful icons
-- ✨ CSS animations with tw-animate-css
+- Built with React and Vite for fast development and performance.
+- Tailwind CSS for modern, responsive, and utility-first styling.
+- Persistent progress tracking using local storage.
+- Customizable business name and keyword for personalized context.
+- Modular and reusable components for easy customization.
 
 ## Getting Started
 
-1. **Clone the repository:**
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+
+### Installation
+
+1. Clone the repository:
 
    ```bash
-   git clone https://github.com/CoreyMcCoy/react-starter-app.git
-   cd react-starter-app
+   git clone https://github.com/CoreyMcCoy/map-pack-tool.git
+   cd map-pack-tool
    ```
 
-2. **Install dependencies:**
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. **Start the development server:**
+3. Start the development server:
 
    ```bash
    npm run dev
@@ -38,37 +45,40 @@ A modern React starter template built with Vite, featuring Tailwind CSS, React R
 ## Project Structure
 
 ```
-src/
-├── components/
-│   ├── Footer.jsx       # Footer component
-│   ├── Header.jsx       # Header component
-│   └── ScrollToTop.jsx  # Custom scroll-to-top button
-├── assets/              # Static assets
-├── App.css              # App-specific styles
-├── App.jsx              # Main App component
-├── index.css            # Global styles
-└── main.jsx             # App entry point
+map-pack-tool/
+├── public/               # Static assets
+├── src/
+│   ├── components/      # Reusable React components
+│   ├── data/            # Data files (e.g., areas.js)
+│   ├── App.jsx          # Main application component
+│   ├── main.jsx         # Entry point
+│   └── index.css        # Global styles
+├── package.json         # Project metadata and scripts
+├── vite.config.js       # Vite configuration
+└── README.md            # Project documentation
 ```
 
 ## Available Scripts
 
-- `npm run dev` - Start the development server with hot reload
-- `npm run build` - Build the app for production
-- `npm run lint` - Run ESLint to check code quality
-- `npm run preview` - Preview the production build locally
+- `npm run dev` - Start the development server with hot reload.
+- `npm run build` - Build the app for production.
+- `npm run preview` - Preview the production build locally.
+- `npm run lint` - Run ESLint to check code quality.
 
 ## Customization
 
-- Modify components in `src/components/` to fit your needs
-- Update styles in `src/index.css` or component files
-- Add new routes in `App.jsx` using React Router
+- Modify components in `src/components/` to fit your needs.
+- Update styles in `src/index.css` or component-specific CSS files.
+- Add or edit data in `src/data/` to customize the checklist.
 
 ## Contributing
 
-Feel free to submit issues and pull requests. Contributions are welcome!
+Contributions are welcome! To contribute:
 
-If this template helps you get started, consider giving it a star on GitHub! ⭐
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request with a clear description of your changes.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

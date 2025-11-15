@@ -10,7 +10,7 @@ export default function Header() {
       <div className="flex items-center justify-between">
         <Link to="/" className="btn btn-ghost normal-case text-xl">
           <div>
-            <h3 className="text-lg font-bold">Cool Project Name</h3>
+            <h3 className="text-lg font-bold">Local Map Pack Ranking Tool</h3>
           </div>
         </Link>
         <div className="relative">
@@ -28,20 +28,6 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 Link
-              </Link>
-              <Link
-                to="#"
-                className="block px-4 py-2 text-sm hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                Another link
-              </Link>
-              <Link
-                to="#"
-                className="block px-4 py-2 text-sm hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                And another link
               </Link>
             </div>
           )}
